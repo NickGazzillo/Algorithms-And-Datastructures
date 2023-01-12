@@ -1,0 +1,21 @@
+import random as r
+def rec(i:list):
+    slice = (len(i)-1)//2
+    print(i)
+    if len(i) == 2:
+        if i[0] == x[ra]:
+            return i[0]
+        else:
+            return i[1]
+    if i[slice] == x[ra]:
+        return i[slice]
+    elif i[slice] < x[ra]:
+        num = rec(i[slice:])
+    elif i[slice] > x[ra]:
+        num = rec(i[:slice])
+    return num
+x = [i for i in range(100)]
+ra = r.randrange(100)
+
+print(rec(x))
+print(x[ra])
